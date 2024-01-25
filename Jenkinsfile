@@ -10,7 +10,7 @@ pipeline {
 
         stage('backup') {
             steps {
-                sh ' rsync /var/lib/jenkins/ /jenkin_backup/backup_files/'
+                sh ' rsync /var/lib/jenkins/workspace/jenkin-backup /jenkin_backup/backup_files/'
             }
         }
 		
