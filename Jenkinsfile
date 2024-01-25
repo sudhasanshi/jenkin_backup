@@ -4,7 +4,7 @@ pipeline {
         stage('checkout') {
             steps {
                 sh 'rm -rf jenkin_backup'
-                sh 'git https://github.com/sudhasanshi/jenkin_backup.git'
+                sh 'git clone https://github.com/sudhasanshi/jenkin_backup.git'
             }
         }
 
