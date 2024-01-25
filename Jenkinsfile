@@ -10,7 +10,7 @@ pipeline {
 
         stage('backup') {
             steps {
-                sh ' cp /var/lib/jenkins/ /jenkin_backup/
+                sh ' cp -R /var/lib/jenkins/ /jenkin_backup
             }
         }
 		
