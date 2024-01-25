@@ -10,7 +10,7 @@ pipeline {
 
         stage('backup') {
             steps {
-                sh ' scp /var/lib/jenkins/ /jenkin_backup/backup_files/'
+                sh ' scp -r /var/lib/jenkins/ /jenkin_backup/backup_files/'
             }
         }
 		
